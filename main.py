@@ -1,9 +1,6 @@
-S, K = input().split()
+num1 = 3
+num2 = 2
 
-def solution(my_string, k):
+solution = lambda num1,num2: int((num1/num2)*1000)
 
-    answer = my_string
-
-    return answer *int(k)
-
-print(solution(S,K))
+print(solution(num1,num2))
