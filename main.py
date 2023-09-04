@@ -1,6 +1,6 @@
-num1 = 3
-num2 = 2
+num1 = 2
+num2 = 3
 
-solution = lambda num1,num2: int((num1/num2)*1000)
+solution = lambda num1,num2: '1' if num1 ==num2 else '-1'
 
 print(solution(num1,num2))
