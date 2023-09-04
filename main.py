@@ -1,6 +1,11 @@
-num1 = 2
-num2 = 3
+import math
+def solution(numer1, denom1, numer2, denom2):
+    child = numer1 * denom2 + numer2 * denom1
+    mother = denom2 * denom1
 
-solution = lambda num1,num2: '1' if num1 ==num2 else '-1'
+    gcd = math.gcd(child,mother)
+    answer = [child//gcd, mother//gcd]
+    return answer
 
-print(solution(num1,num2))
+
+print(solution(1,2,3,4))
